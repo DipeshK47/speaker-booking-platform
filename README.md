@@ -90,7 +90,8 @@ Here’s a sample Postman test collection with API endpoints and sample scripts:
   "firstName": "John",
   "lastName": "Doe",
   "email": "john.doe@example.com",
-  "password": "password123"
+  "password": "password123",
+  "userType": "user"
 }
 ```
 
@@ -122,7 +123,7 @@ Here’s a sample Postman test collection with API endpoints and sample scripts:
 
 ### 3. Create Speaker Profile
 
-**Endpoint:** `POST /api/speakers`
+**Endpoint:** `POST /api/Speaker`
 
 **Headers:**
 - `Authorization: Bearer <token>`
@@ -144,7 +145,7 @@ Here’s a sample Postman test collection with API endpoints and sample scripts:
 
 ### 4. Book Session
 
-**Endpoint:** `POST /api/bookings`
+**Endpoint:** `POST /api/book-session`
 
 **Headers:**
 - `Authorization: Bearer <token>`
@@ -167,7 +168,7 @@ Here’s a sample Postman test collection with API endpoints and sample scripts:
 
 ### 5. Get Speaker List
 
-**Endpoint:** `GET /api/speakers`
+**Endpoint:** `GET /api/Speaker`
 
 **Response:**
 ```json
